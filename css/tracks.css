@@ -155,117 +155,6 @@ body {
     flex: 1 1 auto;
 }
 
-.main-block {
-    width: 100%;    position: relative;
-}
-
-.main-block__body {
-    padding: 184px 0 191px 0;
-    position: relative;
-    z-index: 2;
-}
-
-.main-block__image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-.main-block__title{
-    font-family: 'Krona One', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    padding: 40px;
-    font-size: 40px;
-    line-height: 50px;
-    margin: 10px 0 30px 50px;
-    background: url("../img/title.png") 0 0 no-repeat;
-}
-
-
-.slider__link p {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    color: #06046C;
-    padding-left: 10px;
-}
-
-.slick-list{
-    overflow: hidden;
-}
-
-.slick-track {
-    display: flex;
-}
-
-.slider{
-    position: relative;
-    padding: 0 50px;
-}
-
-.slick-arrow{
-    position: absolute;
-    top: 40%;
-    z-index: 5;
-    font-size: 0;
-    width: 34px;
-    height: 34px;
-}
-
-.slick-arrow.slick-prev{
-    left: 0;
-    background: url("../img/arrow-left.png") 0 0 no-repeat;
-}
-/* Стрелка вправо */
-.slick-arrow.slick-next{
-    right: 0;
-    background: url("../img/arrow-right.png") 0 0 no-repeat;
-}
-
-.track__buttons { 
-    position: absolute;
-    top: 40%;
-    left: 0;
-    width: 175px;
-    display: none;
-}
-
-
-.img{
-    max-width: 195px;
-    position: relative;
-}
-
-.flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.first-div{
-    width: 40px;
-    height: 40px;
-}
-
-.track__play{
-    width: 50px;
-    height: 50px;
-    padding: 20px;
-    background: url("../img/icons/play.png") 0 0 no-repeat;
-}
-
-.pause{
-    background: url("../img/icons/pause.png") 0 0 no-repeat;
-}
-
-.img:hover .track__buttons{
-    display: block;
-}
-
 .play-track{
     position: absolute;
     bottom: 40px;
@@ -305,6 +194,10 @@ body {
     margin-left: 42px;
 }
 
+.item__composition{
+    margin-left: 0;
+}
+
 .play__track{
     margin-left: 14px;
 }
@@ -319,4 +212,82 @@ body {
     display: flex;
     align-items: center;
     margin-left: 270px;
+}
+
+.play__duration{
+    margin-left: 20px;
+}
+
+.main-block {
+    width: 100%;    position: relative;
+}
+
+.main-block__body {
+    padding: 184px 0 191px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.main-block__image {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 0;
+    left: 0;
+}
+
+.main-block__title{
+    font-family: 'Krona One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    padding: 40px;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0px 0 20px 120px;
+    background: url("../img/title.png") 0 0 no-repeat;
+}
+
+.item__track{
+    background: url("../img/tracks/composition_bkg.png") 0 0 no-repeat;
+}
+
+
+.item__container{
+    padding: 12px;
+}
+
+.item__track:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.slick-list{
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slider{
+    position: relative;
+    padding: 0 50px;
+}
+
+.slick-arrow{
+    position: absolute;
+    top: 40%;
+    z-index: 5;
+    font-size: 0;
+    width: 34px;
+    height: 34px;
+}
+
+.slick-arrow.slick-prev{
+    left: 0;
+    background: url("../img/arrow-left.png") 0 0 no-repeat;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    right: 0;
+    background: url("../img/arrow-right.png") 0 0 no-repeat;
 }
