@@ -218,7 +218,6 @@ body {
 .play__add{
     display: flex;
     align-items: center;
-    margin-left: 270px;
 }
 
 .play__duration{
@@ -342,4 +341,40 @@ body {
 
 .button__plus{
     margin-right: 5px;
+}
+
+.track__name{
+    color: #9fb0dd;
+}
+
+.track__author{
+    color: white;
+}
+
+.play__progress{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.play__progress-container{
+    width: 240px;
+    height: 4px;
+    position: relative;
+}
+
+.play__line{
+    width: 240px;
+    height: 2px;
+    background-color: #9fb0dd;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.play__curr-progress{
+    height: 2px;
+    background-color: #366EFF;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
