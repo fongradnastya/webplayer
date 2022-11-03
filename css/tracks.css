@@ -229,7 +229,7 @@ body {
 }
 
 .main-block__body {
-    padding: 184px 0 191px 0;
+    padding: 160px 0 191px 0;
     position: relative;
     z-index: 2;
 }
@@ -377,4 +377,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.current__item{
+    color:rgb(187, 191, 240)
 }
