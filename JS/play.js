@@ -19,14 +19,16 @@ function stopSong(){
     audio.pause()
 }
 
-playBtn.addEventListener("click", () => {
+function play(){
     const isPlaying = player.classList.contains("play")
     if (isPlaying) {
         stopSong()
     }else{
         playSong()
     }
-})
+}
+
+playBtn.addEventListener("click", play)
 
 function updateProgress(e){
     const {duration, currentTime} = e.srcElement
@@ -45,3 +47,7 @@ function setProgress(e){
 }
 
 progressConteiner.addEventListener("click", setProgress)
+
+$('.play__button').on('click', function() {
+    play()
+});

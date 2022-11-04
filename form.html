@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,100&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/form.css">
-    <title>Document</title>
+    <title>Adding playlist</title>
 </head>
 <body>
     <header class="header">
@@ -44,24 +45,30 @@
                         Playlist creation
                     </h1>
                     <div class="form">
+                        <div class="form__cover">
+                            <img src="img/form/cover.png" alt="">
+                        </div>
                         <div class="form__container">
                             <h2 class="form__header">
                                 Playlist name:
                             </h2>
+                            <form action="#" method="post" name="main">
+                                <div class="form__input">
+                                    <input class="input" type="text" name="name_input" value="" placeholder="enter playlist name here">
+                                </div>
+                                <button class="quit" name="quit_btn" type="reset">
+                                    Quit
+                                </button>
+                                <button class="save" type="submit" name="save_btn">
+                                    Save
+                                </button>
+                            </form>
                         </div>
                     </div>
-                    <form action="#" method="get">
-                        <input type="text" name="Playlist name" value="" placeholder="enter playlist name here">
-                        <button>
-                            Quit
-                        </button>
-                        <button class="" type="submit">
-                            Save
-                        </button>
-                    </form>
                 </div>
             </div>
         </section>
+        <script src="JS/form.js"></script>
     </main>
 </body>
 </html>

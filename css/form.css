@@ -194,4 +194,78 @@ body {
     height: 265px;
     background: rgba(43, 42, 109, 0.36);
     border-radius: 10px;
+    display: flex;
+    padding: 35px 50px;
+    align-items: center;
+}
+
+.form__container{
+    margin-left: 50px;
+    width: 100%;
+}
+
+.input{
+    width: 100%;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: 0.2px;
+    padding: 10px 22px;
+    border-radius: 5px;
+    background: #06046C;
+    color:rgb(187, 191, 240);
+}
+
+.form__input{
+    margin-bottom: 18px;
+}
+
+.input:focus{
+    color: #fff;
+}
+
+.input::placeholder{
+    color: #5A72B0;
+}
+
+.quit{
+    width: 170px;
+    margin-right: 18px;
+    background: #06046C;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.quit:hover{
+    color: #5A72B0;
+}
+
+.save{
+    width: 277px; 
+    background: url('../img/form/save_btn.png') 0 0 no-repeat;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.form__header{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.save:hover{
+    color: #06046C;
+}
+
+.form__error{
+    margin-top: 10px;
+    color: rgb(253, 91, 91);
 }
